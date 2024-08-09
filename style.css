@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f3e5d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+}
+
+main{
+    background-color: #ffffff;
+    width: 660px;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+img{
+    width: 655px;
+    height: 300px;
+    border-radius: 8px
+}
+
+h1{
+    margin-top: 40px;
+    margin-bottom: 24px;
+    border: 1px solid red
+}
+
+.description{
+    margin-top: 24px;
+}
+
+section{
+    width: 655px;
+    margin-top: 32px;
+    border: 1px solid blue;
+}
+
+section .preparation{
+    background-color: #FFF7FC;
+}
