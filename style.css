@@ -175,7 +175,7 @@ tr.noborder-bottom{
     border-bottom: 3px solid transparent;
 }
 
-@media(min-width: 1024px) and (max-width: 1440px){
+@media(min-width: 1024px) and (max-width: 2560px){
 
     body{
         background-color: var(--Stone150);
