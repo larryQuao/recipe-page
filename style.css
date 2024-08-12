@@ -98,7 +98,7 @@ section span{
 }
 
 .line-seperater{
-    border: 1px solid var(--Stone150);
+    border-bottom: 1px solid var(--Stone150);
     width: 312px;
 }
 
@@ -147,7 +147,7 @@ table{
 
 table, tr{
     padding-left: 32px;
-    border-bottom:                                                           3px solid var(--Stone150);
+    border-bottom: 1px solid var(--Stone150);
     border-collapse: collapse;
 }
 
