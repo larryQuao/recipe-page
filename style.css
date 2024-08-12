@@ -22,31 +22,30 @@
 *{
     margin: 0;
     padding: 0;
+    /* border: 1px solid red; */
 }
 
 body{
-    background-color: var(--Stone150);
+    background-color: var(--White);
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
 main{
-    background-color: var(--White);
-    width: 660px;
-    padding: 40px;
-    border-radius: 12px;
-    margin: 124px 0 124px 0;
-    color: var(--Stone900);
+    width: 375px;
     font-family: "Outfit", sans-serif;
+    color: var(--Stone900);
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
 }
 
 img{
-    width: 655px;
-    height: 300px;
-    border-radius: 8px
+    width: 375px;
+    object-fit: cover;
 }
 
 h1{
@@ -54,6 +53,8 @@ h1{
     margin-bottom: 24px;
     font-family: "Young-Serif";
     font-weight: 400;
+    font-size: 36px;
+    line-height: 38px;
 }
 
 .description{
@@ -61,22 +62,25 @@ h1{
 }
 
 section{
-    width: 655px;
     margin-top: 32px;
+    width: 312px;
+    line-height: 24px;
 }
 
 section.preparation{
-    width: 625px;
+    width: 288px;
     background-color: var(--Rose50);
-    padding-left: 32px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-radius: 8px;
 }
 
 section.preparation h3{
     color: var(--Rose800);
     padding-bottom: 18px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 section.preparation ul{
@@ -84,10 +88,17 @@ section.preparation ul{
     display: flex;
     flex-direction: column;
     gap: 14px;
+    width: 200px;
+    vertical-align: middle;
 }
 
 section span{
     font-weight: 600;
+}
+
+.line-seperater{
+    border: 1px solid var(--Stone150);
+    width: 312px;
 }
 
 h2{
@@ -95,6 +106,7 @@ h2{
     font-weight: 400;
     color: var(--Brown800);
     padding-bottom: 24px; 
+    font-size: 30px;
 }
 
 section ol, section ul{
@@ -109,7 +121,11 @@ section ul li, section ol li{
 } 
 
 .ingredients{
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+}
+
+.instructions{
+    margin-bottom: 32px;
 }
 
 .instructions ol{
@@ -120,25 +136,34 @@ section ul li, section ol li{
     font-weight: 400;
 }
 
-.instructions{
-    margin-bottom: 64px;
-}
-
 .nutrition p{
-    padding-bottom: 28px;
+    padding-bottom: 16px;
 }
 
 table{
-    padding-left: 30px;
+    width: 312px;
 }
 
-tr, td{
-    padding-right: 244px;
-    padding-bottom: 32px;
+table, tr{
+    padding-left: 32px;
+    border-bottom:                                                           3px solid var(--Stone150);
+    border-collapse: collapse;
 }
 
-tr.nopadding td{
-    padding: 0;
+tr{
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.padding-top-left, td{
+    padding-left: 32px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.nopadding-bottom{
+    padding-bottom: 0px;
+    /* border-bottom: transparent; */
 }
 
 tr td.values{
@@ -146,4 +171,49 @@ tr td.values{
     color: var(--Brown800);
 }
 
-@madia()
+tr.noborder-bottom{
+    border-bottom: 3px solid transparent;
+}
+
+@media(min-width: 1024px) and (max-width: 1440px){
+
+    body{
+        background-color: var(--Stone150);
+    }
+        
+    main{
+        background-color: var(--White);
+        width: 660px;
+        padding: 40px;
+        border-radius: 12px;
+        margin: 124px 0 124px 0;
+        color: var(--Stone900);
+        font-family: "Outfit", sans-serif;
+    }
+
+    img{
+        width: 655px;
+        border-radius: 8px
+    }
+
+    section{
+        width: 655px;
+    }      
+        
+    section.preparation{
+        width: 625px;
+        border-radius: 8px;
+    }
+
+    section.preparation ul{
+        width: 300px;
+    }
+
+    .line-seperater{
+        width: 655px;
+    }
+
+    table{
+        width: 655px;
+    }
+}
