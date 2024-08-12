@@ -76,11 +76,12 @@ section.preparation{
     border-radius: 8px;
 }
 
-section.preparation h3{
+section.preparation h2{
     color: var(--Rose800);
     padding-bottom: 18px;
     font-weight: 700;
     font-size: 18px;
+    font-family: "Outfit", sans-serif;
 }
 
 section.preparation ul{
